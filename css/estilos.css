@@ -194,62 +194,102 @@ body {
     display: block;
 }
 
-/* Testimony */
+/* Banner */
 
-.testimony{
-    background-color: ##f0f0f0;
-}
-
-.testimony__container{
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
+.banner__container{
+    height: 0px;
+    margin-top: 0;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
     align-items: center;
 }
 
-.testimony__body{
-    display: grid;
-    grid-template-columns: 1fr max-content;
+/*Swiper*/
+
+.swiper{
+    height: 100%;
+    padding: 0px 0 20px 0;
+    gap: 5px;
+}
+    
+.swiper-slide{
+    width: 300px;
+    height: 540px;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    grid-template-columns: repeat(10,1fr);
+}
+    
+.icons{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
+    margin-bottom: 40px;
 }
-
-
-.testimony__body--show{
-    pointer-events: unset;
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+    
+.icons i{
+    font-size: 20px;
+    color: #ffb900;
 }
-
-.testimony__img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 30%;
+    
+.icons img{
+        width: 120px;
 }
-
-.testimony__texts{
-    max-width: 700px;
+    
+.product-content{
+    display: flex;
+    justify-content: space-between;
 }
-
-.testimony__course{
-    background-color: royalblue;
-    color: #fff;
+    
+.product-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+    
+.product-txt span{
+    font-size: 25px;
+    color: #ffb900;
+    font-weight: bold;
+}
+    
+.product-txt h3{
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+    
+.product-txt p{
+    font-size: 14px;
+    color: #000;
+}
+    
+.product-img{
+        flex-basis: 50%;
+        text-align: right;
+}
+    
+.product-img img{
+    width: 120px;
+}
+    
+.btn-1{
     display: inline-block;
-    padding: 5px;
+    padding: 13px 55px;
+    border: 1px solid #461f58;
+    border-radius: 25px;
+    color: #461f58;
+    text-decoration: none;
+    margin-top: 50px;
 }
-
-.testimony__arrow{
-    width: 90%;
-    cursor: pointer;
+    
+    
+.swiper-slide:hover {
+        background-color: #a7a7a7;
 }
-
 
 /* Footer */
 
