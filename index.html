@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARANEA</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
 
@@ -43,6 +47,9 @@
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
                     <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Productos</a>
                 </li>
                 <li class="nav__items">
                     <a href="#contacto" class="nav__links">Contacto</a>
@@ -103,7 +110,7 @@
                     <h2 class="subtitle">SIN INTERNET</h2>
                     <p class="knowledge__paragraph">No depende ni requiere una conexión a Internet para funcionar, es un sistema que se ejecuta en su red local.</p>
                     <p class="knowledge__paragraph">Sus datos se almacenan en un motor de base de datos totalmente seguro que mantiene su sistema funcionando rápidamente, 
-                        incluso con años de información histórica. Información inmutable desde fuera de la aplicación.</p>
+                        incluso con años de información histórica. </p>
                     <a href="#contacto" class="cta">SOLICITAR DEMO</a>
                 </div>
 
@@ -113,63 +120,200 @@
             </div>
         </section>
 
-        <section class="testimony">
-            <div class="testimony__container container">
-                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
-
-                <section class="testimony__body testimony__body--show" data-id="1">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">3nstar<span class="testimony__course">Impresora termica</span></h2>
-                        <p class="testimony__review">impresor termico directa de recibos, 80mm, LAN/USB</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/plu.png" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="2">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Producto 2 <span class="testimony__course">Marca / Modelo</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
-                            voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/face2.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="3">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Producto 3<span class="testimony__course">Marca / Modelo</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/face3.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="4">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Producto 4 <span class="testimony__course">Marca / Modelo</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/face4.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-
-                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+        <section class="banner">
+            <div class="banner__container container">
+                <h2 class="subtitle">MEJORA EL RENDIMIENTO DE TU NEGOCIO</h2>
             </div>
         </section>
 
+        <section class="plus" id="productos">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae 
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#contacto" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus! 
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus! 
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus! 
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus! 
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus!
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus!
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus!
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icons">
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                <img src="images/logo.png" alt="">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="product-content">
+                                <div class="product-txt">
+                                    <h3>Jack Sigle</h3>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum vitae quod hic necessitatibus!
+                                    </p>
+                                </div>
+                                <div class="product-img">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                            </div>
+                                <a href="#" class="btn-1">Cotizar</a>
+                        </div>
+                        
+                    </div>
+                </div>
+        </section>
+        
 
         </section>
     </main>
@@ -205,8 +349,11 @@
         </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/sliderswipe.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
+
 </body>
 
 </html>
